@@ -1,0 +1,215 @@
+{
+  "html": `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional plumbing services in Denver, CO. Test Plumber provides reliable plumbing solutions with 24/7 emergency service.">
+    <title>Test Plumber | Professional Plumbing Services Denver, CO</title>
+    <style>
+        :root {
+            --primary: #1a75ff;
+            --secondary: #003d99;
+            --light: #f5f5f5;
+            --dark: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        .header {
+            background-color: var(--primary);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .phone {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1542013936693-84e1a689e1b5?auto=format&fit=crop&w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .services {
+            padding: 4rem 0;
+            background-color: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact {
+            padding: 4rem 0;
+        }
+
+        .footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">Test Plumber</div>
+            <a href="tel:30745654323" class="phone">📞 (307) 456-54323</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Professional Plumbing Services in Denver</h1>
+            <p>Your trusted local plumber for all your plumbing needs</p>
+            <a href="tel:30745654323" class="cta-button">Call Now</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Emergency Plumbing</h3>
+                    <p>24/7 emergency plumbing services for your peace of mind</p>
+                </div>
+                <div class="service-card">
+                    <h3>Repairs & Maintenance</h3>
+                    <p>Professional repair and maintenance services</p>
+                </div>
+                <div class="service-card">
+                    <h3>Installation</h3>
+                    <p>Expert installation of plumbing fixtures and systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Available 24/7 for emergency services</p>
+            <p>📍 Denver, CO</p>
+            <p>📞 <a href="tel:30745654323">(307) 456-54323</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Test Plumber. All rights reserved.</p>
+            <p>Serving Denver and surrounding areas</p>
+        </div>
+    </footer>
+</body>
+</html>`,
+
+  "css": `
+/* Additional styles can be added here */
+.cta-button:hover {
+    background-color: var(--secondary);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.phone:hover {
+    color: var(--light);
+}
+
+.services h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+`
+}
